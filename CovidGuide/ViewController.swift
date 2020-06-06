@@ -63,10 +63,10 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     }
     func render(_ location: CLLocation){
         
-        let sourceLocation = CLLocationCoordinate2D(latitude: location.coordinate.latitude,
-                                                longitude: location.coordinate.longitude)
+        let sourceLocation = CLLocationCoordinate2D(latitude: location.coordinate.latitude,longitude: location.coordinate.longitude)
         let sourcePin = customPin(pinTitle: "Me", pinSubTitle: "", location: sourceLocation)
         self.mapView.addAnnotation(sourcePin)
+        
         
         let destinationLocation1 = CLLocationCoordinate2D(latitude: 37.3360, longitude: -121.9988)
         let destPin1 = customPin(pinTitle: "Kaiser Permanente", pinSubTitle: "This hospital has Covid Treatment and testing equipment: Open 24/7: Phone number: (408) 851-1000", location: destinationLocation1)
@@ -77,8 +77,22 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         let destinationLocation3 = CLLocationCoordinate2D(latitude: 37.3240, longitude: -121.9470)
         let destPin3 = customPin(pinTitle: "Forward Clinic", pinSubTitle: "This is only a testing center: Open 24/7: Phone Number: 883-334-6393", location: destinationLocation3)
         
-        let destinations = [destinationLocation1, destinationLocation2, destinationLocation3]
-        let destinationPins = [destPin1, destPin2, destPin3]
+        let destinationLocation4 = CLLocationCoordinate2D(latitude: 37.325413, longitude: -122.012294)
+        let destPin4 = customPin(pinTitle: "San Joaquin County Public Health Labratory", pinSubTitle: "This is only a testing center: 8 am - 10 pm: Phone Number: (650) 338-4776", location: destinationLocation4)
+        
+        let destinationLocation5 = CLLocationCoordinate2D(latitude: 37.358465, longitude: -122.027469)
+        let destPin5 = customPin(pinTitle: "Elite Medical Center", pinSubTitle: "This is only a testing center: 8 am - 10 pm: Phone Number: +16503183384", location: destinationLocation4)
+        
+        
+        
+        let destinations = [destinationLocation1, destinationLocation2, destinationLocation3, destinationLocation4,destinationLocation5]
+       
+        
+        
+        let destinationPins = [destPin1, destPin2, destPin3, destPin4,destPin5]
+        
+        
+        
         
         var minDistance = 10000000.000
         var destinationLocation = destinationLocation1
@@ -94,8 +108,15 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             }
             i+=1
         }
-                        
+        //Add Pins to the map
         self.mapView.addAnnotation(destPin)
+        self.mapView.addAnnotation(destPin2)
+        self.mapView.addAnnotation(destPin3)
+        self.mapView.addAnnotation(destPin4)
+        self.mapView.addAnnotation(destPin5)
+        
+        
+        
         let sourcePlaceMark = MKPlacemark(coordinate: sourceLocation)
         let destinationPlaceMark = MKPlacemark(coordinate: destinationLocation)
                 
