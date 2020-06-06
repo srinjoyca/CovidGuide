@@ -69,13 +69,13 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         self.mapView.addAnnotation(sourcePin)
         
         let destinationLocation1 = CLLocationCoordinate2D(latitude: 37.3360, longitude: -121.9988)
-        let destPin1 = customPin(pinTitle: "Kaiser Permanente", pinSubTitle: "", location: destinationLocation1)
+        let destPin1 = customPin(pinTitle: "Kaiser Permanente", pinSubTitle: "This hospital has Covid Treatment and testing equipment: Open 24/7: Phone number: (408) 851-1000", location: destinationLocation1)
         
         let destinationLocation2 = CLLocationCoordinate2D(latitude: 37.35143, longitude: -121.9919)
-        let destPin2 = customPin(pinTitle: "Instant Urgent Care", pinSubTitle: "", location: destinationLocation2)
+        let destPin2 = customPin(pinTitle: "Instant Urgent Care", pinSubTitle: "This hospital has Covid Treatment and testing equipment: Open 24/7: Phone number: (408) 260-2273", location: destinationLocation2)
         
         let destinationLocation3 = CLLocationCoordinate2D(latitude: 37.3240, longitude: -121.9470)
-        let destPin3 = customPin(pinTitle: "Forward Clinic", pinSubTitle: "", location: destinationLocation3)
+        let destPin3 = customPin(pinTitle: "Forward Clinic", pinSubTitle: "This is only a testing center: Open 24/7: Phone Number: 883-334-6393", location: destinationLocation3)
         
         let destinations = [destinationLocation1, destinationLocation2, destinationLocation3]
         let destinationPins = [destPin1, destPin2, destPin3]

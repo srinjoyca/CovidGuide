@@ -15,6 +15,7 @@
 		3E920D2D248B25B400B45ADF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E920D2B248B25B400B45ADF /* LaunchScreen.storyboard */; };
 		3E920D38248B25B400B45ADF /* CovidGuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E920D37248B25B400B45ADF /* CovidGuideTests.swift */; };
 		3E920D43248B25B400B45ADF /* CovidGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E920D42248B25B400B45ADF /* CovidGuideUITests.swift */; };
+		3EF5B810248C2799001C508B /* TheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF5B80F248C2799001C508B /* TheViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3E920D3E248B25B400B45ADF /* CovidGuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CovidGuideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E920D42248B25B400B45ADF /* CovidGuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidGuideUITests.swift; sourceTree = "<group>"; };
 		3E920D44248B25B400B45ADF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EF5B80F248C2799001C508B /* TheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				3E920D22248B25B300B45ADF /* SceneDelegate.swift */,
 				3E920D24248B25B300B45ADF /* ViewController.swift */,
 				3E920D26248B25B300B45ADF /* Main.storyboard */,
+				3EF5B80F248C2799001C508B /* TheViewController.swift */,
 				3E920D29248B25B400B45ADF /* Assets.xcassets */,
 				3E920D2B248B25B400B45ADF /* LaunchScreen.storyboard */,
 				3E920D2E248B25B400B45ADF /* Info.plist */,
@@ -261,6 +264,7 @@
 			files = (
 				3E920D25248B25B300B45ADF /* ViewController.swift in Sources */,
 				3E920D21248B25B300B45ADF /* AppDelegate.swift in Sources */,
+				3EF5B810248C2799001C508B /* TheViewController.swift in Sources */,
 				3E920D23248B25B300B45ADF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
